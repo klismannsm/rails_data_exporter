@@ -45,13 +45,13 @@ end
 Exporting the data:
 
 ```
-DataExporter::Exporter.new(example, 'csv').export
+DataExporter::Exporter.new(example, :csv).export
 ```
 
 Exporting the data to a tempfile:
 
 ```
-DataExporter::Exporter.new(example, 'csv').export_to_tempfile
+DataExporter::Exporter.new(example, :csv).export_to_tempfile
 ```
 
 <br>
@@ -59,6 +59,7 @@ Version History:
 
 ```
 0.1.0: Initial version, only CSV is supported
+0.1.1: Change format in initializer to symbol instead of string
 ```
 
 ## Installation

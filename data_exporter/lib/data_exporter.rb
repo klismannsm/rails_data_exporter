@@ -9,14 +9,14 @@ module DataExporter
 
     def export
       case @format
-        when 'csv'
+        when :csv
           export_to_csv
       end
     end
 
     def export_to_tempfile
       case @format
-        when 'csv'
+        when :csv
           export_to_csv_tempfile
       end
     end
